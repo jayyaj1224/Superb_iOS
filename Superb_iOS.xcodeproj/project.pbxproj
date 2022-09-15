@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093821FBDC3D0D160E390066 /* Pods_Superb_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29908B4890E9FCA7239115D9 /* Pods_Superb_iOS.framework */; };
 		AA6FC15428D3EE4F00E0E2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15328D3EE4F00E0E2E9 /* AppDelegate.swift */; };
 		AA6FC15628D3EE4F00E0E2E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15528D3EE4F00E0E2E9 /* SceneDelegate.swift */; };
 		AA6FC15828D3EE4F00E0E2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15728D3EE4F00E0E2E9 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29908B4890E9FCA7239115D9 /* Pods_Superb_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Superb_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FED7C3EE94F69162B43323 /* Pods-Superb_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Superb_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AA6FC15028D3EE4F00E0E2E9 /* Superb_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superb_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6FC15328D3EE4F00E0E2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA6FC15528D3EE4F00E0E2E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AA6FC15C28D3EE5000E0E2E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6FC15F28D3EE5000E0E2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA6FC16128D3EE5000E0E2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC61D9E8F520EBDFD83EEC6 /* Pods-Superb_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Superb_iOS.release.xcconfig"; path = "Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093821FBDC3D0D160E390066 /* Pods_Superb_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13550BBD7C9DC1CC6CC75453 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45FED7C3EE94F69162B43323 /* Pods-Superb_iOS.debug.xcconfig */,
+				BAC61D9E8F520EBDFD83EEC6 /* Pods-Superb_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AA6FC14728D3EE4F00E0E2E9 = {
 			isa = PBXGroup;
 			children = (
 				AA6FC15228D3EE4F00E0E2E9 /* Superb_iOS */,
 				AA6FC15128D3EE4F00E0E2E9 /* Products */,
+				13550BBD7C9DC1CC6CC75453 /* Pods */,
+				D7897246F28BD543908057F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = Superb_iOS;
 			sourceTree = "<group>";
 		};
+		D7897246F28BD543908057F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29908B4890E9FCA7239115D9 /* Pods_Superb_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA6FC16428D3EE5000E0E2E9 /* Build configuration list for PBXNativeTarget "Superb_iOS" */;
 			buildPhases = (
+				329A43CE197BDFF958DE05AD /* [CP] Check Pods Manifest.lock */,
 				AA6FC14C28D3EE4F00E0E2E9 /* Sources */,
 				AA6FC14D28D3EE4F00E0E2E9 /* Frameworks */,
 				AA6FC14E28D3EE4F00E0E2E9 /* Resources */,
+				E8DDAE007C24BABBD0A45081 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329A43CE197BDFF958DE05AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Superb_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8DDAE007C24BABBD0A45081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA6FC14C28D3EE4F00E0E2E9 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		AA6FC16528D3EE5000E0E2E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FED7C3EE94F69162B43323 /* Pods-Superb_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		AA6FC16628D3EE5000E0E2E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC61D9E8F520EBDFD83EEC6 /* Pods-Superb_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
