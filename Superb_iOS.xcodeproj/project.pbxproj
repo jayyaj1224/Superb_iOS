@@ -10,10 +10,10 @@
 		093821FBDC3D0D160E390066 /* Pods_Superb_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29908B4890E9FCA7239115D9 /* Pods_Superb_iOS.framework */; };
 		AA6FC15428D3EE4F00E0E2E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15328D3EE4F00E0E2E9 /* AppDelegate.swift */; };
 		AA6FC15628D3EE4F00E0E2E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15528D3EE4F00E0E2E9 /* SceneDelegate.swift */; };
-		AA6FC15828D3EE4F00E0E2E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15728D3EE4F00E0E2E9 /* ViewController.swift */; };
-		AA6FC15B28D3EE4F00E0E2E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6FC15928D3EE4F00E0E2E9 /* Main.storyboard */; };
+		AA6FC15828D3EE4F00E0E2E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC15728D3EE4F00E0E2E9 /* HomeViewController.swift */; };
 		AA6FC15D28D3EE5000E0E2E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6FC15C28D3EE5000E0E2E9 /* Assets.xcassets */; };
 		AA6FC16028D3EE5000E0E2E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6FC15E28D3EE5000E0E2E9 /* LaunchScreen.storyboard */; };
+		AA6FC16928D3F44100E0E2E9 /* Neumorphism View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FC16828D3F44100E0E2E9 /* Neumorphism View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,11 @@
 		AA6FC15028D3EE4F00E0E2E9 /* Superb_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superb_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6FC15328D3EE4F00E0E2E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA6FC15528D3EE4F00E0E2E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA6FC15728D3EE4F00E0E2E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA6FC15A28D3EE4F00E0E2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA6FC15728D3EE4F00E0E2E9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA6FC15C28D3EE5000E0E2E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6FC15F28D3EE5000E0E2E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA6FC16128D3EE5000E0E2E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA6FC16828D3F44100E0E2E9 /* Neumorphism View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neumorphism View.swift"; sourceTree = "<group>"; };
 		BAC61D9E8F520EBDFD83EEC6 /* Pods-Superb_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Superb_iOS.release.xcconfig"; path = "Target Support Files/Pods-Superb_iOS/Pods-Superb_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +48,6 @@
 				45FED7C3EE94F69162B43323 /* Pods-Superb_iOS.debug.xcconfig */,
 				BAC61D9E8F520EBDFD83EEC6 /* Pods-Superb_iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,13 +74,21 @@
 			children = (
 				AA6FC15328D3EE4F00E0E2E9 /* AppDelegate.swift */,
 				AA6FC15528D3EE4F00E0E2E9 /* SceneDelegate.swift */,
-				AA6FC15728D3EE4F00E0E2E9 /* ViewController.swift */,
-				AA6FC15928D3EE4F00E0E2E9 /* Main.storyboard */,
+				AA6FC15728D3EE4F00E0E2E9 /* HomeViewController.swift */,
+				AA6FC16728D3F2A400E0E2E9 /* Neumorphic View */,
 				AA6FC15C28D3EE5000E0E2E9 /* Assets.xcassets */,
 				AA6FC15E28D3EE5000E0E2E9 /* LaunchScreen.storyboard */,
 				AA6FC16128D3EE5000E0E2E9 /* Info.plist */,
 			);
 			path = Superb_iOS;
+			sourceTree = "<group>";
+		};
+		AA6FC16728D3F2A400E0E2E9 /* Neumorphic View */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FC16828D3F44100E0E2E9 /* Neumorphism View.swift */,
+			);
+			path = "Neumorphic View";
 			sourceTree = "<group>";
 		};
 		D7897246F28BD543908057F0 /* Frameworks */ = {
@@ -154,7 +161,6 @@
 			files = (
 				AA6FC16028D3EE5000E0E2E9 /* LaunchScreen.storyboard in Resources */,
 				AA6FC15D28D3EE5000E0E2E9 /* Assets.xcassets in Resources */,
-				AA6FC15B28D3EE4F00E0E2E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA6FC15828D3EE4F00E0E2E9 /* ViewController.swift in Sources */,
+				AA6FC15828D3EE4F00E0E2E9 /* HomeViewController.swift in Sources */,
 				AA6FC15428D3EE4F00E0E2E9 /* AppDelegate.swift in Sources */,
 				AA6FC15628D3EE4F00E0E2E9 /* SceneDelegate.swift in Sources */,
+				AA6FC16928D3F44100E0E2E9 /* Neumorphism View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AA6FC15928D3EE4F00E0E2E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA6FC15A28D3EE4F00E0E2E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA6FC15E28D3EE5000E0E2E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +360,6 @@
 				INFOPLIST_FILE = Superb_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +387,6 @@
 				INFOPLIST_FILE = Superb_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
